@@ -1,0 +1,95 @@
+
+.mytop{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+}
+
+.search {
+    padding: 20rpx 16rpx;
+    background-color: #eee;
+    
+    .inp {
+        width: 100%;
+        height: 60rpx;
+        background-color: #fff;
+        line-height: 60rpx;
+        position: relative;
+        input {
+            padding-left: 70rpx;
+        }
+
+        .word {
+            position: absolute;
+            top: 6rpx;
+            left: 20rpx;
+        }
+    }
+}
+
+.tab {
+    display: flex;
+    height: 100rpx;
+    border: 1px solid #ddd;
+    background-color: #fff;
+
+    .item {
+        width: 33.33%;
+        text-align: center;
+        line-height: 100rpx;
+
+    }
+
+    .active {
+        color: #ed4450;
+    }
+}
+
+.goodslist {
+    margin-top: 200rpx;
+    padding: 0 20rpx;
+    .item {
+        height: 260rpx;
+        border-bottom: 1px solid #eee;
+        .box {
+            display: flex;
+            .left {
+                width: 200rpx;
+                height: 200rpx;
+                margin-top: 30rpx;
+                .img {
+                    width: 200rpx;
+                    height: 200rpx;
+                }
+            }
+            .right {
+                flex: 1;
+                padding: 30rpx;
+                .word {
+                    font-size: 16px;
+                    overflow:hidden; 
+                    text-overflow:ellipsis;
+                    display:-webkit-box; 
+                    -webkit-box-orient:vertical;
+                    -webkit-line-clamp:2;
+                }
+                .price {
+                    color: red;
+                    margin-top: 80rpx;
+                    span:first-child {
+                        font-size: 14px;
+                    }
+                    span:last-child {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+.tip{
+    height: 50rpx;
+    text-align: center;
+    color: #ccc;
+}
